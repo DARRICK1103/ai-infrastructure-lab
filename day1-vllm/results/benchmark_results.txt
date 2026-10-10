@@ -1,0 +1,25 @@
+Warming up...
+
+Testing 1 concurrent requests
+Wall time:          4.94s
+Total tokens:       200
+Throughput:         40.46 tok/s
+Average latency:    4.94s
+Maximum latency:    4.94s
+Completed requests: 1
+
+Testing 5 concurrent requests
+Wall time:          5.14s
+Total tokens:       1000
+Throughput:         194.46 tok/s
+Average latency:    5.13s
+Maximum latency:    5.14s
+Completed requests: 5
+
+Testing 10 concurrent requests
+Wall time:          5.21s
+Total tokens:       2000
+Throughput:         384.02 tok/s
+Average latency:    5.20s
+Maximum latency:    5.20s
+Completed requests: 10

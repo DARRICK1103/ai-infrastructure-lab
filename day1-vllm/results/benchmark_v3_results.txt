@@ -1,0 +1,27 @@
+
+Concurrency: 20
+Completed:       60/60
+Wall time:       12.80s
+Throughput:      599.94 tok/s
+Mean latency:    4.23s
+P95 latency:     5.87s
+Max latency:     5.90s
+Output tokens:   7680
+
+Concurrency: 40
+Completed:       60/60
+Wall time:       7.19s
+Throughput:      1068.03 tok/s
+Mean latency:    3.63s
+P95 latency:     3.76s
+Max latency:     3.77s
+Output tokens:   7680
+
+Concurrency: 60
+Completed:       60/60
+Wall time:       3.82s
+Throughput:      2009.47 tok/s
+Mean latency:    3.73s
+P95 latency:     3.79s
+Max latency:     3.79s
+Output tokens:   7680

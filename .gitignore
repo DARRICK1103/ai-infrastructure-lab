@@ -1,0 +1,63 @@
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_ed25519
+id_rsa
+*.kubeconfig
+kubeconfig
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+.venv/
+venv/
+env/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+*.egg-info/
+dist/
+build/
+
+# Jupyter / notebooks
+.ipynb_checkpoints/
+
+# Model downloads and large artifacts
+*.safetensors
+*.gguf
+*.pt
+*.pth
+*.bin
+*.onnx
+*.tar.gz
+*.whl
+.cache/
+huggingface/
+HF_HOME/
+transformers_cache/
+models/
+checkpoints/
+*.ckpt
+
+# Logs and local experiment dumps (keep curated results/ under day folders)
+*.log
+logs/
+wandb/
+mlruns/
+.neptune/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*~
+
+# Cursor / local agent state
+.cursor/
