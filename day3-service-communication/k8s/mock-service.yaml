@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: mock-inference
+  namespace: ai-infra
+spec:
+  type: ClusterIP
+  selector:
+    app: mock-inference
+  ports:
+    - port: 8000
+      targetPort: 8000

@@ -105,6 +105,20 @@ client = OpenAI(
 
 Pod-to-Service traffic inside the cluster does not need `kubectl port-forward`.
 
+From your laptop (outside the cluster), use port-forward to reach the Service:
+
+```bash
+kubectl port-forward svc/inference-api 8080:80 -n ai-infra
+```
+
+In another terminal:
+
+```bash
+curl.exe http://localhost:8080
+```
+
+That tunnels `localhost:8080` → Service port 80 → a selected Pod. It is a debug/dev path, not how in-cluster traffic works.
+
 ## Where is the control plane?
 
 The control plane includes the API server, scheduler, controllers, and etcd. These manage the cluster but are not normally on the HTTP path to your application.

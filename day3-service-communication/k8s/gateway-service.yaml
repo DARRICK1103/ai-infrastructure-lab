@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: ai-api-gateway
+  namespace: ai-infra
+spec:
+  type: ClusterIP
+  selector:
+    app: ai-api-gateway
+  ports:
+    - port: 8000
+      targetPort: 8000

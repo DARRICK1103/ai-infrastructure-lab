@@ -17,10 +17,10 @@ This repository is a portfolio project. Each day produces runnable experiments, 
 | Day | Topic | Status |
 | --- | --- | --- |
 | 1 | GPU inference with vLLM and performance benchmarking | Completed |
-| 2 | Kubernetes fundamentals and inference deployment manifests | Planned |
-| 3 | Prometheus and Grafana monitoring | Planned |
+| 2 | Kubernetes fundamentals and inference deployment manifests | Completed |
+| 3 | Service-to-service communication (gateway + mock inference) | Completed |
 | 4 | Reliability, scaling, and serving architecture | Planned |
-| 5 | Integration and final architecture review | Planned |
+| 5 | Observability (Prometheus / Grafana) and architecture review | Planned |
 
 ## Day 1 highlight — GPU inference and benchmarking
 
@@ -43,12 +43,10 @@ Full commands, custom concurrency experiments, KV-cache observations, and limita
 
 ```text
 ai-infrastructure-lab/
-├── README.md                 # Portfolio overview
-├── day1-vllm/
-│   ├── README.md             # Lab report and interpretation
-│   ├── benchmarks/           # Custom concurrency benchmark scripts
-│   └── results/              # Raw .txt / .json measurement outputs
-└── (day2+ folders as the lab progresses)
+├── README.md                      # Portfolio overview
+├── day1-vllm/                     # GPU inference + benchmarks
+├── day2-kubernetes/               # Deployments, Services, architecture notes
+└── day3-service-communication/    # Mock inference + in-cluster DNS
 ```
 
 ## Principles

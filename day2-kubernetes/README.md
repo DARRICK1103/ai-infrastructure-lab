@@ -28,7 +28,17 @@ Scaled the Deployment from 1 to 3 replicas using `kubectl scale`.
 
 ### 4. Service networking
 
-Created a ClusterIP Service and verified that it selected three Pod endpoints. Used `kubectl port-forward` to access Nginx at `http://localhost:8080`.
+Created a ClusterIP Service and verified that it selected three Pod endpoints. Used `kubectl port-forward` to access Nginx from the host:
+
+```bash
+kubectl port-forward svc/inference-api 8080:80 -n ai-infra
+```
+
+In another terminal:
+
+```bash
+curl.exe http://localhost:8080
+```
 
 ### 5. Declarative infrastructure
 
